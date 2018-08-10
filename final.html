@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .top-container {
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .header {
+        padding: 10px 16px;
+        background: #555;
+        color: #f1f1f1;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 102px;
+      }
+      * {
+          box-sizing: border-box;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+      </style>
+      </head>
+      <link
+        rel = "stylesheet"
+        href = "finalstyletest.css">
+<body>
+  <p><div id="timeleft"></div></p>
+  <div class="header" id="myHeader">
+      <h2>Site title</h2>
+      <p>this header is sticky!</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h2>This is where the description will go</h2>
+      <p>dcgfshagvcjhkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjnka bjljbbbbbbbbbbbbbbbbbbbbbbbbbbbbbj svkhb skj jc xhkc jk</p>
+      <p>cfsavags cmznb</p>
+      <p>savchggggggggggggggggggg ghasv ckhgggggggggggggggggggggggggggggggggggggggggggggggggg asgvhahg uyasvh,j </P>
+      <p>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv hhhhhhhhhhhhhhhhhhhhhhhhhh aaaaaaaaaaaaaaaaaaaaaaaa  u      uuuuuuuuuuuuuuuuuuuh uuuuuuuuuuuiiiiiiiiiiiii</p>
+      <p>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+    </div>
+    <div class="column">
+      <h2>This is where the games will go</h2>
+      <script src="map_setup.js"></script>
+    </div>
+  </div>
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+    }
+}
+</script>
+</body>
+</html>

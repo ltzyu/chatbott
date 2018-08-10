@@ -1,0 +1,19 @@
+h2 {
+    font-style : italic;
+    color : darkred;
+}
+
+h4 {
+    color : orange;
+}
+
+body {
+      font-family : "Lucida Console", Monaco, monospace;
+      background-color: ivory;
+}
+h1 {
+    color: darkolivegreen;
+}
+.sub {
+    color : olivedrab;
+}
